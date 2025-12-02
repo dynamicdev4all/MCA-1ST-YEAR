@@ -57,6 +57,9 @@ public class VerifyOTPServlet extends HttpServlet {
 //				System.out.println("OTP VERIFICATION FAILED");
 //			}
 		}
+		else {
+			System.out.println("The token has been used once");
+		}
 	
 	}
 

@@ -31,7 +31,6 @@ public class JWTUtil {
 		.withIssuedAt(currentDateTime)
 		.withIssuer("MCA")
 		.sign(algo);
-		DatabaseConnection.insertToken(token);
 		return token;
 	}
 	

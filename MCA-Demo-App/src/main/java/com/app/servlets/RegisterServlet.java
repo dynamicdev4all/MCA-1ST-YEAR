@@ -53,7 +53,7 @@ public class RegisterServlet extends HttpServlet {
 		
 		if(dataSaveStatus) {
 			//here we are creating a 6 digit OTP.
-			int OTP = (int)((Math.random() * 900000) + 100000);
+			int OTP = (int)((Math.random() * 900000) +  100000);
 			// here we are calling a fn named sendRegisterOTP which sends an OTP on the user email
 			//if everything is okay, the fn says true, otherwise the fn says false;
 			// if true --> OTP gaya
